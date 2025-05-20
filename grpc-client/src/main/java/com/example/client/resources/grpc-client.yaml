@@ -1,0 +1,16 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: grpc-client
+  description: Java client application that calls the Greeter gRPC service
+  tags:
+    - grpc
+    - java
+    - client
+spec:
+  type: application
+  owner: your-team-name
+  lifecycle: experimental
+  system: greeting-system
+  consumesApis:
+    - greeting-grpc-api
