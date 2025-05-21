@@ -9,7 +9,7 @@ servers:
     description: Local development server
  
 paths:
-  /greet:
+  /greet/{name}:
     get:
       summary: greet user
       tags:
