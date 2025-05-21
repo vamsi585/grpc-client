@@ -1,0 +1,20 @@
+apiVersion: backstage.io/v1alpha1
+kind: API
+metadata:
+  name: greet-service-api
+  description: A Spring Boot REST API for GREET USER
+  tags:
+    - java
+    - springboot
+    - rest
+    - api
+  annotations:
+    # Link to the GitHub repo
+    source-location: url:https://github.com/vamsi585/grpc-client/tree/main/grpc-client 
+spec:
+  type: openapi
+  lifecycle: experimental
+  owner: team-user-platform
+  system: identity-management
+  definition: 
+      $text: https://github.com/vamsi585/grpc-client/blob/main/grpc-client/src/main/java/com/example/client/resources/openapi.yaml
